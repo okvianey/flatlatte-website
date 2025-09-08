@@ -24,11 +24,7 @@
       creativos y emprendedores
     </title>
     <meta name="robots" content="max-image-preview:large" />
-    <style>
-      img:is([sizes="auto" i], [sizes^="auto," i]) {
-        contain-intrinsic-size: 3000px 1500px;
-      }
-    </style>
+
     <link
       rel="alternate"
       type="application/rss+xml"
@@ -758,7 +754,7 @@
           >
         </div>
         <div class="text-center">
-          <p class="fw-bold">Hecho con caf&eacute; y c&oacute;digo.</p>
+          <p class="fw-bold">Hecho con caf&eacute; y c&oacute;digo</p>
         </div>
         <div class="text-center">
           <ul class="list-unstyled d-flex fs-4 mb-3 justify-content-center">
@@ -795,37 +791,5 @@
     </a>
     <!-- Preloader -->
     <!-- <div id="preloader"></div> -->
-    <script type="speculationrules">
-      {
-        "prefetch": [
-          {
-            "source": "document",
-            "where": {
-              "and": [
-                { "href_matches": "\/*" },
-                {
-                  "not": {
-                    "href_matches": [
-                      "\/wp-*.php",
-                      "\/wp-admin\/*",
-                      "\/wp-content\/uploads\/*",
-                      "\/wp-content\/*",
-                      "\/wp-content\/plugins\/*",
-                      "\/wp-content\/themes\/flat-latte-theme\/*",
-                      "\/*\\?(.+)"
-                    ]
-                  }
-                },
-                { "not": { "selector_matches": "a[rel~=\"nofollow\"]" } },
-                {
-                  "not": { "selector_matches": ".no-prefetch, .no-prefetch a" }
-                }
-              ]
-            },
-            "eagerness": "conservative"
-          }
-        ]
-      }
-    </script>
   </body>
 </html>
